@@ -169,8 +169,9 @@ body {
 /* temp details show here  */
 
 .tempInformation {
-    width: 50rem;
+    width: 80rem;
     margin: auto;
+    margin-bottom: 20px;
     min-height: 20rem;
     background-color: #323544;
     border-radius: 1rem;
@@ -263,6 +264,25 @@ footer p {
     font-size: 1.4rem;
 }
 
+.bottom_layer p {
+  font-size: 20px;
+  color: white;
+}
+
+.bottom_layer{
+    display: flex;
+    flex-direction: row;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    min-height: 161px;
+}
+.bottom_layer sup {
+    font-size: 2rem;
+    margin-top: -0.5rem;
+}
 /* responsvie code */
 
 @media(max-width:768px) {
@@ -292,5 +312,10 @@ footer p {
     sup {
         font-size: 5rem;
         margin-top: -2rem;
+    }
+    .bottom_layer{
+        display: flex;
+        flex-direction: column;
+        min-height: 317px;
     }
 }
